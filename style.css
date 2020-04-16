@@ -115,7 +115,7 @@ ul {
 	text-decoration:none;
 }
 .myButton:hover {
-	background-color:grey;
+	background-color:#3e3e3e;
 }
 .myButton:active {
 	position:relative;
