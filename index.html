@@ -23,10 +23,66 @@
             </ul>
             <a href="mailto:kroekasa@gmail.com?subject=Hello!" class="myButton">Contact me</a>
         </div>
+        <a href="#experience" class="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
     </div>
 
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <h3>C++ Application Developer</h3>
+                    <p class="experience-company">LMAX Group &middot; London</p>
+                </div>
+            </div>
+        </div>
+        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <h3>MSci Computer Science &mdash; First Class Honours</h3>
+                    <p class="experience-company">University of Birmingham &middot; 2017 &ndash; 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/KenRoekasa/Neon-Element" class="project-card" target="_blank">
+                <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                <h3>Neon Element</h3>
+                <p>Isometric free-for-all arena brawler supporting up to 4 players. Switch between Earth, Fire, Air, and Water elements to exploit tactical strengths and weaknesses.</p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>C++</span>
+                    <span>Multiplayer</span>
+                </div>
+            </a>
+            <a href="https://github.com/KenRoekasa/Football-Prediction-AI" class="project-card" target="_blank">
+                <div class="project-icon"><i class="fas fa-futbol"></i></div>
+                <h3>Football Prediction AI</h3>
+                <p>Machine learning system that predicts football match outcomes using 50+ engineered features. Trains neural networks and traditional ML models on scraped match data.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>scikit-learn</span>
+                </div>
+            </a>
+        </div>
+    </section>
 
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+        sections.forEach(s => observer.observe(s));
+    </script>
 
 </body>
 
