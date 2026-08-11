@@ -227,6 +227,51 @@ ul {
     color: #999;
 }
 
+/* Things to Do in London */
+.london-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 80px 48px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 18% 0%, rgba(110, 150, 255, 0.12), transparent 55%),
+        radial-gradient(circle at 85% 105%, rgba(255, 135, 110, 0.12), transparent 55%),
+        rgba(255, 255, 255, 0.03);
+    transition: border-color 0.3s ease;
+}
+
+.london-panel:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.london-eyebrow {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8ea6d6;
+    margin-bottom: 20px;
+}
+
+.london-panel h2 {
+    font-size: 44px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.london-panel p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #a8a8a8;
+    max-width: 500px;
+    margin: 0 auto 36px;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -281,6 +326,14 @@ ul {
     .section-title {
         font-size: 28px;
     }
+
+    .london-panel {
+        padding: 56px 32px;
+    }
+
+    .london-panel h2 {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -305,5 +358,17 @@ ul {
     .project-card,
     .experience-card {
         padding: 24px;
+    }
+
+    .london-panel {
+        padding: 44px 22px;
+    }
+
+    .london-panel h2 {
+        font-size: 26px;
+    }
+
+    .london-panel p {
+        font-size: 15px;
     }
 }
